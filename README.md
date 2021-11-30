@@ -14,3 +14,9 @@ Y para crear nuevamente el DIST
 ```
 npm start
 ```
+
+Para acceder al sitio
+
+```
+https://github.com/tecibernetica/webpack-starter
+```
