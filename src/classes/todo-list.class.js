@@ -51,6 +51,7 @@ export class TodoList{
     guardarLocalStorage(){
 
         localStorage.setItem('todo',JSON.stringify(this.todos));
+        
 
     }
 
@@ -61,7 +62,17 @@ export class TodoList{
                          : [];
 
         this.todos = this.todos.map(obj => Todo.fromJson(obj));
-                
+        
+        
+        const ovejas = [
+            { name: 'Noa', color: 'azul' },
+            { name: 'Euge', color: 'rojo' },
+            { name: 'Navidad', color: 'rojo' },
+            { name: 'Ki Na Ma', color: 'rojo'}
+          ]
+        
+          const ovejasFiltradas = ovejas.filter( todo => todo.color =='rojo' && todo.name.includes('a') && todo.name.includes('a'));
+        console.log(ovejasFiltradas)
 
     }
 }
